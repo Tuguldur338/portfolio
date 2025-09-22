@@ -45,6 +45,9 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
+  /* Facebook recommended color */
+  --fb-logo: #0866ff;
+
   /* Neon Colors for Tailwind */
   --color-neon-pink: var(--neon-pink);
   --color-neon-magenta: var(--neon-magenta);
@@ -90,8 +93,44 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-  filter: invert(1);
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(0);
   opacity: 1 !important;
+}
+
+/* fade-in animation with delay */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* fade-in animation without delay */
+
+@keyframes fadeIn1 {
+  from {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in1 {
+  animation: fadeIn1 1s ease-in-out forwards;
 }

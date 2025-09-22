@@ -6,61 +6,183 @@ import Carousel from "react-bootstrap/Carousel";
 const MainContent = () => {
   return (
     <div className="w-full">
-      <Carousel className="w-full max-w-6xl mx-auto" interval={5000} fade>
-        <Carousel.Item>
-          <div className="relative w-full h-64 sm:h-96 md:h-[500px] flex items-center justify-center bg-white">
-            <Image
-              src="/images/saturday-cleanUp-voluntary-work-picture.jpg"
-              alt="Saturday activity"
-              fill
-              className="rounded-lg object-cover object-center"
-            />
-          </div>
+      <div className="mb-[100px]">
+        <h1 className="absolute left-[30%] text-black"></h1>
 
-          <Carousel.Caption className="bg-black/40 rounded p-2">
-            <h3 className="text-white text-lg sm:text-2xl font-semibold">
-              Saturday activities
-            </h3>
-            <p className="text-white">Cleaning the trash</p>
-          </Carousel.Caption>
-        </Carousel.Item>
+        <Image
+          src="/images/hero-image.jpg"
+          alt="src.name"
+          width={500}
+          height={500}
+          className="max-w-screen w-[100%] h-auto fade-in"
+        />
+      </div>
 
-        <Carousel.Item>
-          <div className="relative w-full h-64 sm:h-96 md:h-[500px] flex items-center justify-center bg-white">
-            <Image
-              src="/images/saturday-cleanUp-voluntary-work.jpg"
-              alt="Saturday activity"
-              fill
-              className="rounded-lg object-cover object-center"
-            />
-          </div>
+      <div className="flex justify-center items-center">
+        <h1>Activities</h1>
+      </div>
 
-          <Carousel.Caption className="bg-black/40 rounded p-2">
-            <h3 className="text-white text-lg sm:text-2xl font-semibold">
-              Saturday activities
-            </h3>
-            <p className="text-white">Cleaning the trash</p>
-          </Carousel.Caption>
-        </Carousel.Item>
+      <div className="flex gap-[5px]">
+        <Carousel
+          className="w-full max-w-6xl mx-auto"
+          pause={false}
+          interval={3000}
+          fade
+        >
+          <Carousel.Item>
+            <div className="relative w-full h-64 sm:h-96 md:h-[500px] flex items-center justify-center bg-white">
+              <Image
+                src="/images/saturday-cleanUp-voluntary-work-picture.jpg"
+                alt="Saturday activity"
+                fill
+                className="rounded-lg object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-black/50 rounded-lg"></div>
+            </div>
 
-        <Carousel.Item>
-          <div className="relative w-full h-64 sm:h-96 md:h-[500px] flex items-center justify-center bg-white">
-            <Image
-              src="/images/saturday-voluntary-work.jpg"
-              alt="Saturday activity"
-              fill
-              className="rounded-lg object-cover object-center"
-            />
-          </div>
+            <Carousel.Caption className="bg-black/40 rounded p-2">
+              <h3 className="text-white text-lg sm:text-2xl font-semibold">
+                Voluntary job
+              </h3>
+              <p className="text-white">Cleaning the trash</p>
+            </Carousel.Caption>
+          </Carousel.Item>
 
-          <Carousel.Caption className="bg-black/40 rounded p-2">
-            <h3 className="text-white text-lg sm:text-2xl font-semibold">
-              Saturday activities
-            </h3>
-            <p className="text-white">Cleaning the trash</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
+          <Carousel.Item>
+            <div className="relative w-full h-64 sm:h-96 md:h-[500px] flex items-center justify-center bg-white">
+              <Image
+                src="/images/saturday-cleanUp-voluntary-work.jpg"
+                alt="Saturday activity"
+                fill
+                className="rounded-lg object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-black/50 rounded-lg"></div>
+            </div>
+
+            <Carousel.Caption className="bg-black/40 rounded p-2">
+              <h3 className="text-white text-lg sm:text-2xl font-semibold">
+                Voluntary job
+              </h3>
+              <p className="text-white">Cleaning the trash</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <div className="relative w-full h-64 sm:h-96 md:h-[500px] flex items-center justify-center bg-white">
+              <Image
+                src="/images/saturday-voluntary-work.jpg"
+                alt="Saturday activity"
+                fill
+                className="rounded-lg object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-black/50 rounded-lg"></div>
+            </div>
+
+            <Carousel.Caption className="bg-black/40 rounded p-2">
+              <h3 className="text-white text-lg sm:text-2xl font-semibold">
+                Voluntary job
+              </h3>
+              <p className="text-white">Cleaning the trash</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+
+        <Carousel
+          className="w-full max-w-6xl mx-auto"
+          pause={false}
+          interval={3000}
+          fade
+        >
+          <Carousel.Item>
+            <div className="relative w-full h-64 sm:h-96 md:h-[500px] flex items-center justify-center bg-white">
+              <Image
+                src="/images/national-sports-day.jpg"
+                alt="src.name"
+                fill
+                className="rounded-lg object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-black/50 rounded-lg"></div>
+            </div>
+
+            <Carousel.Caption className="bg-black/40 rounded p-2">
+              <h3 className="text-white">National sports day</h3>
+              <p className="text-white">2025 09.06</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <div className="relative w-full h-64 sm:h-96 md:h-[500px] flex items-center justify-center bg-white">
+              <Image
+                src="/images/national-sports-day-2.jpg"
+                alt="src.name"
+                fill
+                className="rounded-lg object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-black/50 rounded-lg"></div>
+            </div>
+
+            <Carousel.Caption className="bg-black/40 rounded p-2">
+              <h3 className="text-white">National sports day</h3>
+              <p className="text-white">2025 09.06</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <div className="relative w-full h-64 sm:h-96 md:h-[500px] flex items-center justify-center bg-white">
+              <Image
+                src="/images/national-sports-day-3.jpg"
+                alt="src.name"
+                fill
+                className="rounded-lg object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-black/50 rounded-lg"></div>
+            </div>
+
+            <Carousel.Caption className="bg-black/40 rounded p-2">
+              <h3 className="text-white">National sports day</h3>
+              <p className="text-white">2025 09.06</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <div className="relative w-full h-64 sm:h-96 md:h-[500px] flex items-center justify-center bg-white">
+              <Image
+                src="/images/national-sports-day-4.jpg"
+                alt="src.name"
+                fill
+                className="rounded-lg object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-black/50 rounded-lg"></div>
+            </div>
+
+            <Carousel.Caption className="bg-black/40 rounded p-2">
+              <h3 className="text-white">National sports day</h3>
+              <p className="text-white">2025 09.06</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <div className="relative w-full h-64 sm:h-96 md:h-[500px] flex items-center justify-center bg-white">
+              <Image
+                src="/images/national-sports-day-5.jpg"
+                alt="src.name"
+                fill
+                className="rounded-lg object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-black/50 rounded-lg"></div>
+            </div>
+
+            <Carousel.Caption className="bg-black/40 rounded p-2">
+              <h3 className="text-white">National sports day</h3>
+              <p className="text-white">2025 09.06</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+      </div>
+
+      <div>
+        <div></div>
+      </div>
     </div>
   );
 };
