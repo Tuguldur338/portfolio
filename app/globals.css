@@ -48,6 +48,9 @@
   /* Facebook recommended color */
   --fb-logo: #0866ff;
 
+  /* Preffered color for what we achieved */
+  --trophy-picture: rgb(43, 104, 156);
+
   /* Neon Colors for Tailwind */
   --color-neon-pink: var(--neon-pink);
   --color-neon-magenta: var(--neon-magenta);
@@ -99,12 +102,12 @@ body {
   opacity: 1 !important;
 }
 
-/* fade-in animation with delay */
+/* fade-in animation with 1s delay */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeIn 1s ease-in-out forwards;
-  animation-delay: 0.5s;
+  animation-delay: 0.7s;
 }
 
 @keyframes fadeIn {

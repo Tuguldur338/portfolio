@@ -9,58 +9,64 @@ import Navbar from "react-bootstrap/Navbar";
 
 const Header = () => {
   return (
-    <div className="bg-gray-100">
-      <Navbar expand="lg" className="">
-        <Container>
-          <Link href="/">
-            <Image
-              src="/images/orkhon-khasu-logo.png"
-              width={70}
-              height={70}
-              alt="Orkhon Khasu Logo"
-              className="cursor-pointer"
-            />
-          </Link>
+    <header className="flex justify-evenly bg-gray-200 fade-in1 py-[10px] items-center">
+      <Link href="/" className="!no-underline text-black">
+        <div className="flex gap-[10px] items-center">
+          <Image
+            src="/images/orkhon-khasu-logo.png"
+            width={70}
+            height={70}
+            alt="Orkhon Khasu Logo"
+            className="cursor-pointer"
+          />
 
-          <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
+          <h4 className="!font-semibold">Orkhon Khasu</h4>
+        </div>
+      </Link>
 
-          <Navbar.Collapse id="basic-navbar-nav">
-            <div className="flex">
-              <Nav className="ml-auto navbar-nav">
-                <Nav.Link
-                  href="/About"
-                  className="hover:!text-black !font-semibold"
-                >
-                  About
-                </Nav.Link>
+      <div className="">
+        <Navbar expand="lg" className="">
+          <Container>
+            <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
 
-                <Nav.Link
-                  href="/Prices"
-                  className="hover:!text-black !font-semibold"
-                >
-                  Prices/fees
-                </Nav.Link>
+            <Navbar.Collapse id="basic-navbar-nav">
+              <div className="flex">
+                <Nav className="ml-auto navbar-nav">
+                  <Nav.Link
+                    href="/About"
+                    className="hover:!text-orange-500 !font-normal !text-blue-800 transition-all duration-300"
+                  >
+                    ABOUT
+                  </Nav.Link>
 
-                <Nav.Link
-                  href="/Teachers"
-                  className="hover:!text-black !font-semibold"
-                >
-                  Teachers
-                </Nav.Link>
-              </Nav>
+                  <Nav.Link
+                    href="/Prices"
+                    className="hover:!text-orange-500 !font-normal !text-blue-800 transition-all duration-300"
+                  >
+                    PRICES/FEES
+                  </Nav.Link>
 
-              <Nav>
-                <Nav.Link href="/"></Nav.Link>
+                  <Nav.Link
+                    href="/Teachers"
+                    className="hover:!text-orange-500 !font-normal !text-blue-800 transition-all duration-300"
+                  >
+                    TEACHERS
+                  </Nav.Link>
+                </Nav>
 
-                <Nav.Link href="/"></Nav.Link>
+                <Nav>
+                  <Nav.Link href="/"></Nav.Link>
 
-                <Nav.Link href="/"></Nav.Link>
-              </Nav>
-            </div>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </div>
+                  <Nav.Link href="/"></Nav.Link>
+
+                  <Nav.Link href="/"></Nav.Link>
+                </Nav>
+              </div>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      </div>
+    </header>
   );
 };
 

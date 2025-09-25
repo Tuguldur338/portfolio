@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { Button } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
+import Link from "next/link";
+import { FaArrowDown } from "react-icons/fa";
 
 const MainContent = () => {
   return (
@@ -242,7 +244,7 @@ const MainContent = () => {
         </Carousel>
       </div>
 
-      <div className="flex h-[715px] flex-col bg-blue-400">
+      <div className="flex mx-auto h-[900px] max-w-screen w-[100%] flex-col bg-neon-blue">
         <div className="mx-auto mb-[50px]">
           <h1 className="text-white font-sserif">What we achieved</h1>
         </div>
@@ -251,23 +253,32 @@ const MainContent = () => {
           <Image
             src="/images/what-we-achieved.avif"
             alt="What we achieved"
-            width={500}
+            width={700}
             height={700}
-            className=""
+            className="ml-[50px]"
           />
 
-          <div className="bg-gray-300">
-            <div className=" h-[300px] flex items-center justify-center">
+          <div className="bg-gray-300 w-[800px]">
+            <div className=" h-[300px] w-[450px] flex items-center justify-center mx-auto">
               <h4 className="!text-blue-800">
                 Orkhon KhaSu School Basketball Team Wins Khan-Uul District
                 Championship for the 4th Consecutive Year! 🏆🏀
               </h4>
             </div>
 
-            <div className="flex justify-center items-center pb-[50px]">
-              <Button variant="warning" className="!rounded-[50px]">
-                Read more
-              </Button>
+            <div className="flex flex-col justify-center items-center pb-[50px]">
+              <div className="flex items-center justify-center rounded-full !bg-red-700 w-[50px] h-[50px] animate-bounce">
+                <FaArrowDown size={24} className="text-white" />
+              </div>
+
+              <Link href="/ReadMore" className="pt-[20px]">
+                <Button
+                  variant="warning"
+                  className="!rounded-[50px] hover:!bg-orange-400"
+                >
+                  Read more
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
